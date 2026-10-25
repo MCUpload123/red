@@ -21,7 +21,7 @@ class TargetTracker {
     private val upper2 = Scalar(180.0, 255.0, 255.0)
 
     fun detect(rgba: Mat): FloatArray {
-        Imgproc.cvtColor(rgba, hsv, Imgproc.COLOR_RGBA2HSV)
+        Imgproc.cvtColor(rgba, hsv, Imgproc.COLOR_RGB2HSV)
         Core.inRange(hsv, lower1, upper1, mask1)
         Core.inRange(hsv, lower2, upper2, mask2)
         Core.bitwise_or(mask1, mask2, mask)
