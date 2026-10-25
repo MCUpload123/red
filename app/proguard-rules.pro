@@ -1,0 +1,3 @@
+-keep class com.smith.fireassist.** { *; }
+-keep class org.opencv.** { *; }
+-keepclasseswithmembernames class * { native <methods>; }

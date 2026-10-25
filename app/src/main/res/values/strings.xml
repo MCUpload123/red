@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FireAssist</string>
+    <string name="accessibility_desc">Gesture engine for aim assist</string>
+    <string name="btn_start_capture">Start Capture</string>
+    <string name="btn_start_overlay">Start Overlay</string>
+    <string name="btn_start_vpn">Start VPN Guard</string>
+    <string name="btn_open_accessibility">Enable Accessibility</string>
+    <string name="btn_calibrate_fire">Calibrate Fire Button</string>
+    <string name="btn_launch_game">Launch Game</string>
+    <string name="btn_stop">Stop All</string>
+</resources>
