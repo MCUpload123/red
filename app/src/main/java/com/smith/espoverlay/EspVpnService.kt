@@ -103,7 +103,7 @@ class EspVpnService : VpnService() {
         val input = FileInputStream(pfd.fileDescriptor)
         val output = FileOutputStream(pfd.fileDescriptor)
         val buf = ByteArray(32767)
-        while (active.get() && isActive) {
+        while (active.get() && currentCoroutineContext().isActive) {
             try {
                 val n = input.read(buf)
                 if (n <= 0) {
